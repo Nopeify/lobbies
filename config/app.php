@@ -148,6 +148,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Invisnik\LaravelSteamAuth\SteamServiceProvider::class,
         Matriphe\Larinfo\LarinfoServiceProvider::class, // composer require matriphe/larinfo
+        Sentry\SentryLaravel\SentryLaravelServiceProvider::class, // composer require sentry/sentry-laravel
 
         /*
          * Package Service Providers...
@@ -211,6 +212,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Larinfo' => Matriphe\Larinfo\LarinfoFacade::class, // composer require matriphe/larinfo
+        'Sentry' => Sentry\SentryLaravel\SentryFacade::class, // composer require sentry/sentry-laravel
 
     ],
 
