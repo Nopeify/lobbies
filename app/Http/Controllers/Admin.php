@@ -7,7 +7,7 @@ use Auth;
 use Larinfo;
 use App\User;
 use App\Lobby;
-Use App\Activity;
+Use App\activity;
 
 class Admin extends Controller
 {
