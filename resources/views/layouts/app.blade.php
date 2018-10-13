@@ -63,11 +63,7 @@
   @-webkit-keyframes fadeout {from {bottom: 30px; opacity: 1;}to {bottom: 0; opacity: 0;}}
   @keyframes fadeout {from {bottom: 30px; opacity: 1;}to {bottom: 0; opacity: 0;}}
 
-  @if(Route::getCurrentRoute()->uri() == '/')
   .loader {position: fixed;left: 0px;top: 0px;width: 100%;height: 73%;z-index: 9999;background: url("") 50% 50% no-repeat white; opacity: 0.3;}
-  @media (width: 2560px) {.loader {position: fixed;left: 0px;top: 0px;width: 100%;height: 73%;z-index: 9999;background: url("{{URL::asset('media/images/overlay.png')}}") 50% 50% no-repeat transparent; opacity: 1;}}
-  @media (width: 1920px) {.loader {position: fixed;left: 0px;top: 0px;width: 100%;height: 100%;z-index: 9999;background: url("{{URL::asset('media/images/overlay.png')}}") 50% 50% no-repeat transparent; opacity: 1;}}
-  @endif
 
   .btn-animated:hover{box-shadow: 0 8px 11px 0 rgba(0, 0, 0, .15); -webkit-transform: translate(0px, -3px); -ms-transform: translate(0px, -3px); transform: translate(0px, -3px);}
   .btn-animated{transition: all 200ms ease;}
