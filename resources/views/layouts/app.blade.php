@@ -15,7 +15,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <script type="text/javascript">$(window).load(function() {$(".loader").fadeOut("slow"); });</script>
   <script type="text/javascript">$(function () {$("[rel='tooltip']").tooltip();});</script>
+  <script>function success() {var x = document.getElementById("snackbar"); x.className = "show"; setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);}</script>
 
+  <!-- Meta Stuff -->
+  <meta name="description" content="Find & post lobbies for CS:GO quickly and efficiently. HVH, Legit & More!">
+  <meta name="keywords" content="lobbies.us, lobbiesus, lobbies, cs:go, csgo, csgo lobbies, cheating, prime, non-prime, csgo match, matches">
 
   <!-- Fonts -->
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -72,7 +76,6 @@
 
 </style>
 
-<script>function success() {var x = document.getElementById("snackbar"); x.className = "show"; setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);}</script>
 
 </head>
 <body>
