@@ -20,6 +20,7 @@
   <!-- Meta Stuff -->
   <meta name="description" content="Find & post lobbies for CS:GO quickly and efficiently. HVH, Legit & More!">
   <meta name="keywords" content="lobbies.us, lobbiesus, lobbies, cs:go, csgo, csgo lobbies, cheating, prime, non-prime, csgo match, matches">
+  <meta name="google-site-verification" content="2dv0gtXBM9AQxjfNDSKJoRGpJ3FIqLRGPfANNYTRThU" />
 
   <!-- Fonts -->
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
