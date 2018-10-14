@@ -16,11 +16,11 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('role_id')->default(1); // 1 = normal user // 2 = Premium // 3 = Admin // 99 = Banned
-            $table->string('name')->nullable();
+            $table->string('name')->default("no-name");
             $table->integer('lobbies')->default(0);
-            $table->string('acc_url')->nullable();
-            $table->string('avatar')->nullable();
-            $table->string('primaryclan')->nullable();
+            $table->string('acc_url')->default("no-acc_url");
+            $table->string('avatar')->default("no-avatar");
+            $table->string('primaryclan')->default("no-primaryclan");
             $table->string('steamid')->unique();
             $table->rememberToken();
             $table->timestamps();
