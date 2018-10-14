@@ -75,13 +75,22 @@ class SteamLogin extends Controller
       return $user;
     }
 
-
-    return User::create([
-    'name' => $info->personaname,
-    'acc_url' => $info->profileurl,
-    'avatar' => $info->avatarfull,
-    'steamid' => $info->steamID64,
-    'primaryclan' => $info->primaryclanid,
-    ]);
+    if($info->primaryclanid == null){
+      return User::create([
+      'name' => $info->personaname,
+      'acc_url' => $info->profileurl,
+      'avatar' => $info->avatarfull,
+      'steamid' => $info->steamID64,
+      'primaryclan' => "no",
+      ]);
+    } else {
+      return User::create([
+      'name' => $info->personaname,
+      'acc_url' => $info->profileurl,
+      'avatar' => $info->avatarfull,
+      'steamid' => $info->steamID64,
+      'primaryclan' => $info->primaryclanid,
+      ]);  
+    }
   }
 }

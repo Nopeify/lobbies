@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->integer('lobbies')->default(0);
             $table->string('acc_url')->default("no-acc_url");
             $table->string('avatar')->default("no-avatar");
-            $table->string('primaryclan')->default("no-primaryclan");
+            $table->string('primaryclan')->default("0");
             $table->string('steamid')->unique();
             $table->rememberToken();
             $table->timestamps();
