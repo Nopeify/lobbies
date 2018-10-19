@@ -32,14 +32,15 @@ window.addEventListener("load", function(){
   window.cookieconsent.initialise({
     "palette": {
       "popup": {
-        "background": "#000"
+        "background": "#edeff5",
+        "text": "#838391"
       },
       "button": {
-        "background": "#f1d600"
+        "background": "#4b81e8"
       }
     },
     "content": {
-      "href": "www.lobbies.us/policy"
+      "href": "policy"
     }
   })});
 </script>
