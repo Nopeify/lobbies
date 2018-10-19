@@ -80,7 +80,7 @@ class Lobbies extends Controller
 
     // Check if someone is spamming the system with multiple Lobbies
     try{
-      $lobby = Lobby::first();
+      $lobby = Lobby::take(2)->first();
       if($lobby->owner_id == $user->id){
         Session::flash('error', 'You can\'t post more than one lobby at a time.');
         return redirect('/');
