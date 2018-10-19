@@ -32,5 +32,12 @@ class Main extends Controller
 
     return view('premium');
   }
+  public function policy()
+  {
+    $maintance = site_settings::where("for", "=", "site_maintanace")->first();
+    if($maintance && $maintance->content == "true"){return "Site under maintance";}
+
+    return view('policy');
+  }
 
 }

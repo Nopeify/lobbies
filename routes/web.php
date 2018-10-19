@@ -14,6 +14,7 @@
 Route::get('/', 'Main@main')->name('main');
 Route::get('+', 'Main@more')->name('more');
 Route::get('p', 'Main@premium')->name('premium');
+Route::get('policy', 'Main@policy')->name('policy');
 // Auth::routes();
 
 Route::get('/admin', 'Admin@index')->name('admin');
