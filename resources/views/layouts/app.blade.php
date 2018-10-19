@@ -16,60 +16,67 @@
   <script type="text/javascript">$(window).load(function() {$(".loader").fadeOut("slow"); });</script>
   <script type="text/javascript">$(function () {$("[rel='tooltip']").tooltip();});</script>
   <script>function success() {var x = document.getElementById("snackbar"); x.className = "show"; setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);}</script>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6759404615414239",
+    enable_page_level_ads: true
+  });
+</script>
 
-  <!-- Meta Stuff -->
-  <meta name="description" content="Find & post lobbies for CS:GO quickly and efficiently. HVH, Legit & More!">
-  <meta name="keywords" content="lobbies.us, lobbiesus, lobbies, cs:go, csgo, csgo lobbies, cheating, prime, non-prime, csgo match, matches">
-  <meta name="google-site-verification" content="MqhNxCvPISzs5PFWoXrihZd-ndnUg7H2UHIy1TPQnnM" />
+<!-- Meta Stuff -->
+<meta name="description" content="Find & post lobbies for CS:GO quickly and efficiently. HVH, Legit & More!">
+<meta name="keywords" content="lobbies.us, lobbiesus, lobbies, cs:go, csgo, csgo lobbies, cheating, prime, non-prime, csgo match, matches">
+<meta name="google-site-verification" content="MqhNxCvPISzs5PFWoXrihZd-ndnUg7H2UHIy1TPQnnM" />
 
-  <!-- Fonts -->
-  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.css" rel="stylesheet">
+<!-- Fonts -->
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.0/css/flag-icon.css" rel="stylesheet">
 
-  <!-- Styles -->
-  <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-  <style>
-  .lobbies-blue{background-color: #303952;}
-  .btn-primary{background-color: #30336b; border-color: #30336b;}
-  .btn-danger{background-color: #6b3030; border-color: #6b3030;}
-  .btn-success{background-color: #2fa360; border-color: #2fa360;}
-  .form-control:focus{box-shadow: 0 0 0 0.2rem #30336b38;}
-  .table-striped-odd>tbody>tr:nth-child(even)>td,
-  .table-striped-odd>tbody>tr:nth-child(even)>th {background-color: rgba(0,0,0,.05);}
-  .table .thead-light th {background-color: #f2f2f2;border-color: #f2f2f2;}
-  a{color: #ffff;}
-  a:hover{color: #e3e3e3}
-  .navbar-toggler-icon{color: #ffff;}
-  .material-icons{display: inline-flex;vertical-align: bottom;}
-  .card{box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2); border: none;}
-  .card-header{border-bottom: none; background-color: rgba(242, 243, 244, 0.75);}
-  .card-footer{border-top: none; background-color: rgba(242, 243, 244, 0.75);}
-  .lobby{margin-top: 15px;}
-  .lobby-button{border-color: white;}
-  .lobby-form{border: 0px solid #ced4da;}
-  .modal-header{border-bottom: 0px;}
-  .modal-footer{border-top: 0px;}
-  .login-btn{background-color: #414c6b;border-radius: .25rem;transition: all .15s ease-in-out;}
-  .login-btn:hover{background-color: #2b3348; transition: all .15s ease-in-out;}
-  .dropdown-menu{box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2); border: none;}
-  .alert-danger{box-shadow: 0 2px 6px 0 rgba(247, 198, 197, 0.2); border-color: none;}
-  .list-group-item{box-shadow: 0 2px 6px 0.000001rem hsla(0, 0%, 0%, 0.2); border: 0px;}
+<!-- Styles -->
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<style>
+.lobbies-blue{background-color: #303952;}
+.btn-primary{background-color: #30336b; border-color: #30336b;}
+.btn-danger{background-color: #6b3030; border-color: #6b3030;}
+.btn-success{background-color: #2fa360; border-color: #2fa360;}
+.form-control:focus{box-shadow: 0 0 0 0.2rem #30336b38;}
+.table-striped-odd>tbody>tr:nth-child(even)>td,
+.table-striped-odd>tbody>tr:nth-child(even)>th {background-color: rgba(0,0,0,.05);}
+.table .thead-light th {background-color: #f2f2f2;border-color: #f2f2f2;}
+a{color: #ffff;}
+a:hover{color: #e3e3e3}
+.navbar-toggler-icon{color: #ffff;}
+.material-icons{display: inline-flex;vertical-align: bottom;}
+.card{box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2); border: none;}
+.card-header{border-bottom: none; background-color: rgba(242, 243, 244, 0.75);}
+.card-footer{border-top: none; background-color: rgba(242, 243, 244, 0.75);}
+.lobby{margin-top: 15px;}
+.lobby-button{border-color: white;}
+.lobby-form{border: 0px solid #ced4da;}
+.modal-header{border-bottom: 0px;}
+.modal-footer{border-top: 0px;}
+.login-btn{background-color: #414c6b;border-radius: .25rem;transition: all .15s ease-in-out;}
+.login-btn:hover{background-color: #2b3348; transition: all .15s ease-in-out;}
+.dropdown-menu{box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2); border: none;}
+.alert-danger{box-shadow: 0 2px 6px 0 rgba(247, 198, 197, 0.2); border-color: none;}
+.list-group-item{box-shadow: 0 2px 6px 0.000001rem hsla(0, 0%, 0%, 0.2); border: 0px;}
 
-  #snackbar {visibility: hidden;min-width: 250px;margin-left: -125px;background-color: #333;color: #fff;text-align: center;border-radius: 2px;padding: 16px;position: fixed;z-index: 1051;left: 50%; bottom: 30px;}
-  #snackbar.show {visibility: visible;-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;animation: fadein 0.5s, fadeout 0.5s 2.5s;}
-  @-webkit-keyframes fadein {from {bottom: 0; opacity: 0;}to {bottom: 30px; opacity: 1;}}
-  @keyframes fadein {from {bottom: 0; opacity: 0;}to {bottom: 30px; opacity: 1;}}
-  @-webkit-keyframes fadeout {from {bottom: 30px; opacity: 1;}to {bottom: 0; opacity: 0;}}
-  @keyframes fadeout {from {bottom: 30px; opacity: 1;}to {bottom: 0; opacity: 0;}}
+#snackbar {visibility: hidden;min-width: 250px;margin-left: -125px;background-color: #333;color: #fff;text-align: center;border-radius: 2px;padding: 16px;position: fixed;z-index: 1051;left: 50%; bottom: 30px;}
+#snackbar.show {visibility: visible;-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;animation: fadein 0.5s, fadeout 0.5s 2.5s;}
+@-webkit-keyframes fadein {from {bottom: 0; opacity: 0;}to {bottom: 30px; opacity: 1;}}
+@keyframes fadein {from {bottom: 0; opacity: 0;}to {bottom: 30px; opacity: 1;}}
+@-webkit-keyframes fadeout {from {bottom: 30px; opacity: 1;}to {bottom: 0; opacity: 0;}}
+@keyframes fadeout {from {bottom: 30px; opacity: 1;}to {bottom: 0; opacity: 0;}}
 
-  .loader {position: fixed;left: 0px;top: 0px;width: 100%;height: 73%;z-index: 9999;background: url("") 50% 50% no-repeat white; opacity: 0.3;}
+.loader {position: fixed;left: 0px;top: 0px;width: 100%;height: 73%;z-index: 9999;background: url("") 50% 50% no-repeat white; opacity: 0.3;}
 
-  .btn-animated:hover{box-shadow: 0 8px 11px 0 rgba(0, 0, 0, .15); -webkit-transform: translate(0px, -3px); -ms-transform: translate(0px, -3px); transform: translate(0px, -3px);}
-  .btn-animated{transition: all 200ms ease;}
-  .table td, .table th {border-top: 0px;}
-  .table thead th{border-bottom: 0px;}
+.btn-animated:hover{box-shadow: 0 8px 11px 0 rgba(0, 0, 0, .15); -webkit-transform: translate(0px, -3px); -ms-transform: translate(0px, -3px); transform: translate(0px, -3px);}
+.btn-animated{transition: all 200ms ease;}
+.table td, .table th {border-top: 0px;}
+.table thead th{border-bottom: 0px;}
 
 </style>
 
