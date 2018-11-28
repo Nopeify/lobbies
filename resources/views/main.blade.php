@@ -93,6 +93,8 @@
 
       @if($value->lobby_type == 2)
       <div class="card lobby"  style=" border-top: 3px solid #2fa360;">
+      @elseif($value->lobby_type == 3)
+      <div class="card lobby"  style=" border-top: 3px solid #8f2fa3;">
       @else
       <div class="card lobby">
       @endif

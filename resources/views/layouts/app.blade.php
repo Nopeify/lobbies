@@ -108,7 +108,7 @@ window.addEventListener("load", function(){
     <nav class="navbar navbar-expand navbar-laravel lobbies-blue ">
       <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
-          <i class="material-icons">videogame_asset</i> <b>{{ config('app.name', 'Laravel') }} <span class="badge badge-secondary">BETA</span></b>
+          <i class="material-icons">videogame_asset</i> <b>{{ config('app.name', 'Laravel') }}
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
           <span class="navbar-toggler-icon"></span>

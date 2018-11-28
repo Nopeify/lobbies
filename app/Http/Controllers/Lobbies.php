@@ -79,13 +79,13 @@ class Lobbies extends Controller
     }
 
     // Check if someone is spamming the system with multiple Lobbies
-    try{
-      $lobby1 = Lobby::orderBy('updated_at', 'ascending')->take(2)->first();
-      if($lobby1->owner_id == $user->id){
-        Session::flash('error', 'You can\'t post more than one lobby at a time.');
-        return redirect('/');
-      }
-    } catch (\Exception $e) {}
+    // try{
+    //   $lobby1 = Lobby::orderBy('updated_at', 'ascending')->take(2)->first();
+    //   if($lobby1->owner_id == $user->id){
+    //     Session::flash('error', 'You can\'t post more than one lobby at a time.');
+    //     return redirect('/');
+    //   }
+    // } catch (\Exception $e) {}
 
     // Check if user is premium
     if($user->role_id == 2 || $user->role_id == 3){
@@ -94,6 +94,18 @@ class Lobbies extends Controller
       'owner_name' => $user->name,
       'owner_url' => $user->acc_url,
       'lobby_type' => 2,
+      'lobby_link' => request('lobby_link'),
+      'rank' => request('rank'),
+      'region' => request('region'),
+      'type' => request('type'),
+      'Prime' => request('prime'),
+      ]);
+    } elseif(strpos($user->name, "lobbies.us")){
+      Lobby::create([
+      'owner_id' => $user->id,
+      'owner_name' => $user->name,
+      'owner_url' => $user->acc_url,
+      'lobby_type' => 3,
       'lobby_link' => request('lobby_link'),
       'rank' => request('rank'),
       'region' => request('region'),
