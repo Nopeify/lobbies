@@ -14,7 +14,7 @@ class Lobbies extends Controller
   {
     $user = Auth::User();
     // Check if lobby link is an actual lobby.
-    if(strpos(request('lobby_link'), "steam://joinlobby/730/") === false) {
+    if(strpos(request('lobby_link'), "steam://joinlobby/730/") === false || strpos(request('lobby_link'), "steam://joinlobby/578080/") === false) {
       Session::flash('error', 'That lobby link didn\'t seem to work. Please try another.');
       return redirect('/');
     }
